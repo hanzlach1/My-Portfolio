@@ -1,9 +1,9 @@
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
-import Navbar from './Components/Navbar'
-import Home from './pages/Home'
-import Skills from './pages/Skills'
-import Projects from './pages/Projects' // Import Projects
-import Contact from './pages/Contact'
+import Navbar from './components/Navbar.jsx'
+import Home from './pages/Home.jsx'
+import Skills from './pages/Skills.jsx'
+import Projects from './pages/Projects.jsx'
+import Contact from './pages/Contact.jsx'
 import './index.css'
 
 function App() {
@@ -14,7 +14,7 @@ function App() {
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/skills" element={<Skills />} />
-          <Route path="/projects" element={<Projects />} /> {/* Add this line */}
+          <Route path="/projects" element={<Projects />} />
           <Route path="/contact" element={<Contact />} />
         </Routes>
       </div>
